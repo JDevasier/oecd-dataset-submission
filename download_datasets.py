@@ -8,7 +8,7 @@ from slugify import slugify
 DATAFLOW_URL = "https://sdmx.oecd.org/public/rest/dataflow/all"
 DATA_URL_TEMPLATE = "https://sdmx.oecd.org/public/rest/data/{agencyID},{id},{version}?dimensionAtObservation=AllDimensions&format=csvfilewithlabels"
 
-OUTPUT_DIR = "/home/jdd5089/projects/oecd-claim-dataset/baseline-system/baseline/db/datasets"
+OUTPUT_DIR = "./datasets/"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 def get_datasets():
